@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="md:col-span-1">
             <div className="mb-6">
               <img 
-                src="/images/logo-main.png" 
+                src={`${process.env.PUBLIC_URL}/images/logo-main.png`}
                 alt="Mindwerk Logo" 
                 className="h-16 w-auto mb-4"
               />

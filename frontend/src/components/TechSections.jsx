@@ -15,35 +15,35 @@ const TechSections = () => {
         'Fortune 500 Experience',
         'Cutting-edge AI & RPA Solutions'
       ],
-      image: '/images/hero-slide-1.jpeg',
+      image: `${process.env.PUBLIC_URL}/images/hero-slide-1.jpeg`,
       darkOverlay: true
     },
     {
       id: 1,
       title: 'AI & Agentic AI',
       description: 'Harness the power of artificial intelligence and autonomous agents to transform your business operations. Our AI solutions enable intelligent decision-making, automation, and predictive analytics that drive innovation and efficiency.',
-      image: '/images/hero-slide-2.jpeg',
+      image: `${process.env.PUBLIC_URL}/images/hero-slide-2.jpeg`,
       darkOverlay: true
     },
     {
       id: 2,
       title: 'IoT & Industry 4.0',
       description: 'Connect, monitor, and optimize your industrial operations with cutting-edge IoT solutions and Industry 4.0 technologies. Transform your manufacturing and production processes with smart sensors, real-time analytics, and automated systems.',
-      image: '/images/hero-slide-3.jpeg',
+      image: `${process.env.PUBLIC_URL}/images/hero-slide-3.jpeg`,
       darkOverlay: true
     },
     {
       id: 3,
       title: 'Business Consulting & Digital Transformation',
       description: 'Navigate the digital landscape with confidence through our strategic consulting services. We help businesses reimagine their operations, implement digital solutions, and achieve sustainable growth in the modern economy.',
-      image: '/images/hero-slide-4.jpeg',
+      image: `${process.env.PUBLIC_URL}/images/hero-slide-4.jpeg`,
       darkOverlay: true
     },
     {
       id: 4,
       title: 'Cloud Computing & DevOps',
       description: 'Scale your infrastructure seamlessly with our cloud computing and DevOps expertise. From cloud migration to continuous integration and deployment, we build robust, scalable solutions that keep your business running at peak performance.',
-      image: '/images/hero-slide-5.jpeg',
+      image: `${process.env.PUBLIC_URL}/images/hero-slide-5.jpeg`,
       darkOverlay: false
     }
   ];
@@ -63,7 +63,7 @@ const TechSections = () => {
       {/* Logo at Top Left on Desktop, Center on Mobile */}
       <div className="absolute top-5 left-1/2 transform -translate-x-1/2 md:left-8 md:transform-none z-30">
         <img 
-          src="/images/logo-main.png" 
+          src={`${process.env.PUBLIC_URL}/images/logo-main.png`}
           alt="Mindwerk Logo" 
           className="h-32 md:h-40 w-auto"
         />

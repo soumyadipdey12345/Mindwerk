@@ -9,7 +9,7 @@ const AboutUs = () => {
       id: 1,
       name: 'Nilanjan Mitra',
       title: 'MD, Founder',
-      image: '/images/nilanjan-mitra.png',
+      image: `${process.env.PUBLIC_URL}/images/nilanjan-mitra.png`,
       linkedin: 'https://www.linkedin.com',
       bio: 'Visionary founder with extensive experience in IT consulting and digital transformation.'
     },
@@ -17,7 +17,7 @@ const AboutUs = () => {
       id: 2,
       name: 'Anindya Chakraborty',
       title: 'CTO',
-      image: '/images/anindya-chakraborty.png',
+      image: `${process.env.PUBLIC_URL}/images/anindya-chakraborty.png`,
       linkedin: 'https://www.linkedin.com',
       bio: 'Technology leader driving innovation and technical excellence across all platforms.'
     },
@@ -25,7 +25,7 @@ const AboutUs = () => {
       id: 3,
       name: 'Soumyadip Ghosh',
       title: 'Media and UX Head',
-      image: '/images/soumyadip-ghosh.png',
+      image: `${process.env.PUBLIC_URL}/images/soumyadip-ghosh.png`,
       linkedin: 'https://www.linkedin.com',
       bio: 'Creative director ensuring exceptional user experiences and brand presence.'
     },
@@ -33,7 +33,7 @@ const AboutUs = () => {
       id: 4,
       name: 'Husniddin Abbasov',
       title: 'CEO - Uzbekistan',
-      image: '/images/husniddin-abbasov.png',
+      image: `${process.env.PUBLIC_URL}/images/husniddin-abbasov.png`,
       linkedin: 'https://www.linkedin.com',
       bio: 'Leading operations and growth strategy in Central Asian markets.'
     }
@@ -44,49 +44,49 @@ const AboutUs = () => {
       id: 1,
       name: 'Amit Singh',
       title: 'Senior AI Engineer',
-      image: '/images/amit-singh.png'
+      image: `${process.env.PUBLIC_URL}/images/amit-singh.png`
     },
     {
       id: 2,
       name: 'Sneha Desai',
       title: 'RPA Consultant',
-      image: '/images/sneha-desai.png'
+      image: `${process.env.PUBLIC_URL}/images/sneha-desai.png`
     },
     {
       id: 3,
       name: 'Vikram Mehta',
       title: 'Cloud Architect',
-      image: '/images/vikram-mehta.png'
+      image: `${process.env.PUBLIC_URL}/images/vikram-mehta.png`
     },
     {
       id: 4,
       name: 'Kavita Reddy',
       title: 'Business Analyst',
-      image: '/images/kavita-reddy.png'
+      image: `${process.env.PUBLIC_URL}/images/kavita-reddy.png`
     },
     {
       id: 5,
       name: 'Arjun Nair',
       title: 'DevOps Engineer',
-      image: '/images/arjun-nair.png'
+      image: `${process.env.PUBLIC_URL}/images/arjun-nair.png`
     },
     {
       id: 6,
       name: 'Pooja Gupta',
       title: 'UI/UX Designer',
-      image: '/images/pooja-gupta.png'
+      image: `${process.env.PUBLIC_URL}/images/pooja-gupta.png`
     },
     {
       id: 7,
       name: 'Sanjay Iyer',
       title: 'Data Scientist',
-      image: '/images/sanjay-iyer.png'
+      image: `${process.env.PUBLIC_URL}/images/sanjay-iyer.png`
     },
     {
       id: 8,
       name: 'Neha Kapoor',
       title: 'Project Manager',
-      image: '/images/neha-kapoor.png'
+      image: `${process.env.PUBLIC_URL}/images/neha-kapoor.png`
     }
   ];
 

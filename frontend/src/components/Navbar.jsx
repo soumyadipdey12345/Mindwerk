@@ -42,7 +42,7 @@ const Navbar = () => {
             <div className="flex-shrink-0">
               <a href="/" className="flex items-center space-x-2">
                 <img 
-                  src="/images/logo-horizontal.jpg" 
+                  src={`${process.env.PUBLIC_URL}/images/logo-horizontal.jpg`}
                   alt="Mindwerk Logo" 
                   className="h-12 w-auto"
                 />

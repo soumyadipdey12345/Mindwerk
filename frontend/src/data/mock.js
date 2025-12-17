@@ -1,12 +1,12 @@
 export const clients = [
-  { name: 'TMF', logo: '/images/clients/client-1.jpg' },
-  { name: 'Blinkit', logo: '/images/clients/client-2.jpg' },
-  { name: 'TCS', logo: '/images/clients/client-2.jpg' },
-  { name: 'Unilever', logo: '/images/clients/client-1.jpg' },
-  { name: 'Goenka Group', logo: '/images/clients/client-2.jpg' },
-  { name: 'Franchise India', logo: '/images/clients/client-1.jpg' },
-  { name: 'Gionee', logo: '/images/clients/client-2.jpg' },
-  { name: 'Panasonic', logo: '/images/clients/client-1.jpg' },
+  { name: 'TMF', logo: `${process.env.PUBLIC_URL}/images/clients/client-1.jpg` },
+  { name: 'Blinkit', logo: `${process.env.PUBLIC_URL}/images/clients/client-2.jpg` },
+  { name: 'TCS', logo: `${process.env.PUBLIC_URL}/images/clients/client-2.jpg` },
+  { name: 'Unilever', logo: `${process.env.PUBLIC_URL}/images/clients/client-1.jpg` },
+  { name: 'Goenka Group', logo: `${process.env.PUBLIC_URL}/images/clients/client-2.jpg` },
+  { name: 'Franchise India', logo: `${process.env.PUBLIC_URL}/images/clients/client-1.jpg` },
+  { name: 'Gionee', logo: `${process.env.PUBLIC_URL}/images/clients/client-2.jpg` },
+  { name: 'Panasonic', logo: `${process.env.PUBLIC_URL}/images/clients/client-1.jpg` },
 ];
 
 export const services = [
@@ -65,22 +65,22 @@ export const services = [
 ];
 
 export const technologies = [
-  { name: 'HTML5', logo: '/images/tech/html5.svg' },
-  { name: 'CSS3', logo: '/images/tech/css3.svg' },
-  { name: 'JavaScript', logo: '/images/tech/javascript.svg' },
-  { name: 'React', logo: '/images/tech/react.svg' },
-  { name: 'Angular', logo: '/images/tech/angular.svg' },
-  { name: 'Vue.js', logo: '/images/tech/vuejs.svg' },
-  { name: 'Node.js', logo: '/images/tech/nodejs.svg' },
-  { name: 'MongoDB', logo: '/images/tech/mongodb.svg' },
-  { name: 'AWS', logo: '/images/tech/aws.svg' },
-  { name: 'Laravel', logo: '/images/tech/laravel.svg' },
-  { name: 'WordPress', logo: '/images/tech/wordpress.svg' },
-  { name: 'Shopify', logo: '/images/tech/shopify.svg' },
-  { name: 'Android', logo: '/images/tech/android.svg' },
-  { name: 'iOS', logo: '/images/tech/ios.svg' },
-  { name: 'Bootstrap', logo: '/images/tech/bootstrap.svg' },
-  { name: 'Drupal', logo: '/images/tech/drupal.svg' },
+  { name: 'HTML5', logo: `${process.env.PUBLIC_URL}/images/tech/html5.svg` },
+  { name: 'CSS3', logo: `${process.env.PUBLIC_URL}/images/tech/css3.svg` },
+  { name: 'JavaScript', logo: `${process.env.PUBLIC_URL}/images/tech/javascript.svg` },
+  { name: 'React', logo: `${process.env.PUBLIC_URL}/images/tech/react.svg` },
+  { name: 'Angular', logo: `${process.env.PUBLIC_URL}/images/tech/angular.svg` },
+  { name: 'Vue.js', logo: `${process.env.PUBLIC_URL}/images/tech/vuejs.svg` },
+  { name: 'Node.js', logo: `${process.env.PUBLIC_URL}/images/tech/nodejs.svg` },
+  { name: 'MongoDB', logo: `${process.env.PUBLIC_URL}/images/tech/mongodb.svg` },
+  { name: 'AWS', logo: `${process.env.PUBLIC_URL}/images/tech/aws.svg` },
+  { name: 'Laravel', logo: `${process.env.PUBLIC_URL}/images/tech/laravel.svg` },
+  { name: 'WordPress', logo: `${process.env.PUBLIC_URL}/images/tech/wordpress.svg` },
+  { name: 'Shopify', logo: `${process.env.PUBLIC_URL}/images/tech/shopify.svg` },
+  { name: 'Android', logo: `${process.env.PUBLIC_URL}/images/tech/android.svg` },
+  { name: 'iOS', logo: `${process.env.PUBLIC_URL}/images/tech/ios.svg` },
+  { name: 'Bootstrap', logo: `${process.env.PUBLIC_URL}/images/tech/bootstrap.svg` },
+  { name: 'Drupal', logo: `${process.env.PUBLIC_URL}/images/tech/drupal.svg` },
 ];
 
 export const testimonials = [
@@ -172,7 +172,7 @@ export const portfolioItems = [
       '25% cost savings'
     ],
     tags: ['AI/ML', 'RPA', 'IoT', 'Cloud Migration'],
-    image: '/images/portfolio-1.jpg'
+    image: `${process.env.PUBLIC_URL}/images/portfolio-1.jpg`
   },
   {
     id: 2,
@@ -186,14 +186,14 @@ export const portfolioItems = [
       'Full compliance achieved'
     ],
     tags: ['RPA', 'AI', 'Data Analytics', 'Compliance Systems'],
-    image: '/images/portfolio-2.jpg'
+    image: `${process.env.PUBLIC_URL}/images/portfolio-2.jpg`
   },
   {
     id: 3,
     title: 'Digital Transformation for Healthcare Provider',
     description: 'Orchestrated complete digital transformation initiative for a multi-location healthcare provider, implementing ERP systems, patient data management, and compliance automation, improving operational efficiency by 60%.',
     tags: ['Digital Transformation', 'Healthcare IT', 'ERP', 'Compliance'],
-    image: '/images/portfolio-3.jpg',
+    image: `${process.env.PUBLIC_URL}/images/portfolio-3.jpg`,
     results: '60% efficiency improvement'
   }
 ];
