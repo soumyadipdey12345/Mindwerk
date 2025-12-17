@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Mindwerk/static/css/main.5e8f5503.css",
-    "main.js": "/Mindwerk/static/js/main.90d26061.js",
+    "main.js": "/Mindwerk/static/js/main.e7895fdf.js",
     "index.html": "/Mindwerk/index.html",
     "main.5e8f5503.css.map": "/Mindwerk/static/css/main.5e8f5503.css.map",
-    "main.90d26061.js.map": "/Mindwerk/static/js/main.90d26061.js.map"
+    "main.e7895fdf.js.map": "/Mindwerk/static/js/main.e7895fdf.js.map"
   },
   "entrypoints": [
     "static/css/main.5e8f5503.css",
-    "static/js/main.90d26061.js"
+    "static/js/main.e7895fdf.js"
   ]
 }
