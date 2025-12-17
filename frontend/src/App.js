@@ -41,7 +41,7 @@ function HomePage() {
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename="/Mindwerk">
       <div className="App">
         <Routes>
           <Route path="/" element={<HomePage />} />

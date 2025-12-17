@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 
 const Navbar = () => {
@@ -40,21 +41,21 @@ const Navbar = () => {
           {/* Horizontal Logo - Only show after scroll */}
           {isScrolled && (
             <div className="flex-shrink-0">
-              <a href="/" className="flex items-center space-x-2">
+              <Link to="/" className="flex items-center space-x-2">
                 <img 
-                  src={`${process.env.PUBLIC_URL}/images/logo-horizontal.jpg`}
+                  src="/Mindwerk/images/logo-horizontal.jpg"
                   alt="Mindwerk Logo" 
                   className="h-12 w-auto"
                 />
-              </a>
+              </Link>
             </div>
           )}
 
           {/* Desktop Navigation */}
           <div className={`hidden md:flex items-center space-x-8 ${!isScrolled ? 'ml-auto' : ''}`}>
-            <a href="/" className={`${isScrolled ? 'text-black' : 'text-white'} hover:text-red-600 transition-colors duration-300 font-medium`}>
+            <Link to="/" className={`${isScrolled ? 'text-black' : 'text-white'} hover:text-red-600 transition-colors duration-300 font-medium`}>
               Home
-            </a>
+            </Link>
             
             {/* Services Dropdown */}
             <div className="relative group">
@@ -64,13 +65,13 @@ const Navbar = () => {
               </button>
               <div className="absolute top-full left-0 mt-2 w-64 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 {servicesMenu.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
-                    href={item.href}
+                    to={item.href}
                     className="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors first:rounded-t-lg last:rounded-b-lg"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -83,24 +84,24 @@ const Navbar = () => {
               </button>
               <div className="absolute top-full left-0 mt-2 w-64 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 {industriesMenu.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
-                    href={item.href}
+                    to={item.href}
                     className="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors first:rounded-t-lg last:rounded-b-lg"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
 
-            <a href="/about-us" className={`${isScrolled ? 'text-black' : 'text-white'} hover:text-red-600 transition-colors duration-300 font-medium`}>
+            <Link to="/about-us" className={`${isScrolled ? 'text-black' : 'text-white'} hover:text-red-600 transition-colors duration-300 font-medium`}>
               About
-            </a>
-            <a href="/careers" className={`${isScrolled ? 'text-black' : 'text-white'} hover:text-red-600 transition-colors duration-300 font-medium`}>
+            </Link>
+            <Link to="/careers" className={`${isScrolled ? 'text-black' : 'text-white'} hover:text-red-600 transition-colors duration-300 font-medium`}>
               Join Us
-            </a>
-            <a href="/#contact" className={`${isScrolled ? 'text-black' : 'text-white'} hover:text-red-600 transition-colors duration-300 font-medium`}>
+            </Link>
+            <a href="#contact" className={`${isScrolled ? 'text-black' : 'text-white'} hover:text-red-600 transition-colors duration-300 font-medium`}>
               Contact
             </a>
           </div>
@@ -121,7 +122,7 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200">
           <div className="px-4 py-4 space-y-3">
-            <a href="/" className="block text-gray-700 hover:text-red-600 py-2">Home</a>
+            <Link to="/" className="block text-gray-700 hover:text-red-600 py-2" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
             
             {/* Mobile Services */}
             <div>
@@ -135,9 +136,9 @@ const Navbar = () => {
               {openDropdown === 'services' && (
                 <div className="pl-4 space-y-2 mt-2">
                   {servicesMenu.map((item) => (
-                    <a key={item.name} href={item.href} className="block text-gray-600 hover:text-red-600 py-1.5 text-sm">
+                    <Link key={item.name} to={item.href} className="block text-gray-600 hover:text-red-600 py-1.5 text-sm" onClick={() => setIsMobileMenuOpen(false)}>
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               )}
@@ -155,17 +156,17 @@ const Navbar = () => {
               {openDropdown === 'industries' && (
                 <div className="pl-4 space-y-2 mt-2">
                   {industriesMenu.map((item) => (
-                    <a key={item.name} href={item.href} className="block text-gray-600 hover:text-red-600 py-1.5 text-sm">
+                    <Link key={item.name} to={item.href} className="block text-gray-600 hover:text-red-600 py-1.5 text-sm" onClick={() => setIsMobileMenuOpen(false)}>
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               )}
             </div>
 
-            <a href="/about-us" className="block text-gray-700 hover:text-red-600 py-2">About</a>
-            <a href="/careers" className="block text-gray-700 hover:text-red-600 py-2">Join Us</a>
-            <a href="/#contact" className="block text-gray-700 hover:text-red-600 py-2">Contact</a>
+            <Link to="/about-us" className="block text-gray-700 hover:text-red-600 py-2" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
+            <Link to="/careers" className="block text-gray-700 hover:text-red-600 py-2" onClick={() => setIsMobileMenuOpen(false)}>Join Us</Link>
+            <a href="#contact" className="block text-gray-700 hover:text-red-600 py-2" onClick={() => setIsMobileMenuOpen(false)}>Contact</a>
           </div>
         </div>
       )}

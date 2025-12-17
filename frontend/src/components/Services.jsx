@@ -16,7 +16,7 @@ const Services = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src={`${process.env.PUBLIC_URL}/images/services-background.jpeg`}
+          src="/Mindwerk/images/services-background.jpeg"
           alt="Digital Services Background"
           className="w-full h-full object-cover opacity-30"
         />

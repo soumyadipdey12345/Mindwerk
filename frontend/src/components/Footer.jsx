@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
@@ -10,7 +11,7 @@ const Footer = () => {
           <div className="md:col-span-1">
             <div className="mb-6">
               <img 
-                src={`${process.env.PUBLIC_URL}/images/logo-main.png`}
+                src="/Mindwerk/images/logo-main.png"
                 alt="Mindwerk Logo" 
                 className="h-16 w-auto mb-4"
               />
@@ -39,32 +40,32 @@ const Footer = () => {
             <h3 className="text-white font-bold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <a href="/" className="text-white/70 hover:text-red-600 transition-colors">
+                <Link to="/" className="text-white/70 hover:text-red-600 transition-colors">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/#services" className="text-white/70 hover:text-red-600 transition-colors">
+                <a href="#services" className="text-white/70 hover:text-red-600 transition-colors">
                   Services
                 </a>
               </li>
               <li>
-                <a href="/#industries" className="text-white/70 hover:text-red-600 transition-colors">
+                <a href="#industries" className="text-white/70 hover:text-red-600 transition-colors">
                   Industries
                 </a>
               </li>
               <li>
-                <a href="/about-us" className="text-white/70 hover:text-red-600 transition-colors">
+                <Link to="/about-us" className="text-white/70 hover:text-red-600 transition-colors">
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/careers" className="text-white/70 hover:text-red-600 transition-colors">
+                <Link to="/careers" className="text-white/70 hover:text-red-600 transition-colors">
                   Join Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/#contact" className="text-white/70 hover:text-red-600 transition-colors">
+                <a href="#contact" className="text-white/70 hover:text-red-600 transition-colors">
                   Contact
                 </a>
               </li>

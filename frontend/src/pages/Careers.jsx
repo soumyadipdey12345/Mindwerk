@@ -204,7 +204,7 @@ const Careers = () => {
           <div className="bg-gradient-to-br from-red-50 to-gray-50 rounded-3xl p-12 border-2 border-red-100">
             <div className="flex items-start gap-6 mb-6">
               <img 
-                src={`${process.env.PUBLIC_URL}/images/hr-team.png`}
+                src="/Mindwerk/images/hr-team.png"
                 alt="HR Team"
                 className="w-24 h-24 rounded-full border-4 border-white shadow-lg"
               />
